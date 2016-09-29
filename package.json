@@ -17,7 +17,8 @@
     },
     "scripts": {
         "coverage": "./node_modules/.bin/istanbul cover _mocha -- -R spec",
-        "test": "./node_modules/mocha/bin/mocha"
+        "test": "./node_modules/mocha/bin/mocha",
+        "prepublish": "./node_modules/mocha/bin/mocha"
     },
-    "version": "0.0.5"
+    "version": "0.0.6"
 }
