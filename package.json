@@ -11,7 +11,7 @@
     },
     "license": "ISC",
     "main": "lib/timer.js",
-    "name": "timer",
+    "name": "exec-timer",
     "repository": {
         "type": "git",
         "url": "https://github.com/ksatty/exec-timer.git"
