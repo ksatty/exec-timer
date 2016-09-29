@@ -1,0 +1,20 @@
+{
+  "author": "hcasatti@gmail.com",
+  "dependencies": {
+    "microtime": "^2.1.1"
+  },
+  "description": "",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.1.0"
+  },
+  "license": "ISC",
+  "main": "lib/timer.js",
+  "name": "timer",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha",
+    "coverage": "./node_modules/.bin/istanbul cover _mocha -- -R spec"
+  },
+  "version": "0.0.1"
+}
