@@ -49,8 +49,14 @@ timer.measure('promise', new Promise((resolve, reject) => {
 });
 ```
 
+```
+timer.start('measure');
+// Some code
+timer.end('measure');
+```
+
 Get all measures
 ```
 timer.get(); // Map
 timer.get().toObject() // Object
-```
+``
