@@ -20,5 +20,5 @@
         "coverage": "./node_modules/.bin/istanbul cover _mocha -- -R spec",
         "test": "./node_modules/mocha/bin/mocha"
     },
-    "version": "0.0.2"
+    "version": "0.0.3"
 }
