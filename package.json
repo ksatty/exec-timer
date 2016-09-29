@@ -1,7 +1,6 @@
 {
     "author": "hcasatti@gmail.com",
     "dependencies": {
-        "microtime": "^2.1.1"
     },
     "description": "",
     "devDependencies": {
@@ -20,5 +19,5 @@
         "coverage": "./node_modules/.bin/istanbul cover _mocha -- -R spec",
         "test": "./node_modules/mocha/bin/mocha"
     },
-    "version": "0.0.3"
+    "version": "0.0.4"
 }
