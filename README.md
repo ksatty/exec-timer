@@ -59,4 +59,4 @@ Get all measures
 ```
 timer.get(); // Map
 timer.get().toObject() // Object
-``
+```

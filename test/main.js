@@ -110,4 +110,38 @@ describe('Timer', () => {
 		expect(timer.get('measure 1')).to.be.above(0);
 		expect(timer.get('measure 2')).to.be.above(0);
 	});
+
+	it('should clear a single measurement', () => {
+		timer.measure('measure 1', (end) => {
+			end();
+		});
+		timer.measure('measure 2', (end) => {
+			end();
+		});
+
+		expect(timer.get('measure 1')).to.be.above(0);
+		expect(timer.get('measure 2')).to.be.above(0);
+
+		timer.reset('measure 1');
+
+		expect(timer.get('measure 1')).to.be.undefined;
+		expect(timer.get('measure 2')).to.be.above(0);
+	});
+
+	it('should clear all measurements', () => {
+		timer.measure('measure 1', (end) => {
+			end();
+		});
+		timer.measure('measure 2', (end) => {
+			end();
+		});
+
+		expect(timer.get('measure 1')).to.be.above(0);
+		expect(timer.get('measure 2')).to.be.above(0);
+
+		timer.reset();
+
+		expect(timer.get('measure 1')).to.be.undefined;
+		expect(timer.get('measure 2')).to.be.undefined;
+	});
 });
